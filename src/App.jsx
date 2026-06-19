@@ -1,17 +1,38 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
 import Hero from './components/Hero'
 
+import {Card} from './components/Card.jsx'
+import { Footer } from './components/Footer.jsx'
+
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+    
+
+  <div>
+    
      <Hero />
-    </>
+  <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4">
+      <Card 
+        image="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
+        title="Library"
+        description="A quiet space to study, read and research."
+        linkText="See more"
+        linkUrl="#library-route"
+      />
+
+     
+    </div>
+     <Footer />
+</div>
+
+
+      
+      
+
   )
 }
 
