@@ -1,13 +1,20 @@
 import { useState } from 'react'
 import './App.css'
+import Hero from './components/Hero'
+
 import {Card} from './components/Card.jsx'
 import { Footer } from './components/Footer.jsx'
+
 
 function App() {
 
 
   return (
+    
+
   <div>
+    
+     <Hero />
   <div className="flex justify-center items-center min-h-screen bg-gray-50 p-4">
       <Card 
         image="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
@@ -25,6 +32,7 @@ function App() {
 
       
       
+
   )
 }
 
